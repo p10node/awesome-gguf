@@ -1,0 +1,45 @@
+name: ⚠️ Report a Broken Link or Outdated Resource
+description: Let us know if a link is 404, archived, or no longer actively maintained.
+title: "[Broken/Outdated]: <Resource Name>"
+labels: ["bug", "maintenance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for keeping **Awesome GGUF** up to date and accurate!
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource Name
+      placeholder: "e.g., TheBloke Llama models"
+    validations:
+      required: true
+
+  - type: input
+    id: current-url
+    attributes:
+      label: Current URL in README
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Problem Type
+      options:
+        - "Broken link (404 / Dead URL)"
+        - "Project archived / abandoned"
+        - "Project renamed or moved to new repository"
+        - "Inaccurate description or superseded information"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-fix
+    attributes:
+      label: Proposed Fix / Updated URL (Optional)
+      description: If you know the replacement URL or want to recommend removal, let us know.
+      placeholder: "The repo has moved to https://... or this should be removed as it was deprecated in favor of..."
+

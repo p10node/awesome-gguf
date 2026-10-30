@@ -1,0 +1,67 @@
+name: 🚀 Suggest a New GGUF Resource
+description: Recommend a tool, runtime, library, guide, or quantizer to be added to the list.
+title: "[Suggestion]: <Project/Resource Name>"
+labels: ["enhancement", "resource-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand **Awesome GGUF**!
+        Please review [CONTRIBUTING.md](../CONTRIBUTING.md) to ensure your submission meets our quality criteria.
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource / Project Name
+      placeholder: "e.g., node-llama-cpp"
+    validations:
+      required: true
+
+  - type: input
+    id: resource-url
+    attributes:
+      label: URL / Repository Link
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Target Category
+      description: Where does this resource belong?
+      options:
+        - "Desktop & Turnkey Applications"
+        - "Inference Engines & Serving"
+        - "Mobile & Edge AI"
+        - "Quantization & Model Tooling"
+        - "SDKs & Language Bindings"
+        - "Model Hubs & Top Quantizers"
+        - "Deep Dives, Specs & Articles"
+        - "Other / New Category"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: Provide a concise (1-2 sentence) objective summary.
+      placeholder: "Fast Node.js native bindings for llama.cpp supporting TypeScript and Bun."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: The project is actively maintained (recent updates / commits within 6 months).
+          required: true
+        - label: The project directly interacts with or supports the GGUF binary format.
+          required: true
+        - label: I have searched the list to ensure this is not a duplicate.
+          required: true
+        - label: The description is objective and avoids subjective marketing buzzwords.
+          required: true
+

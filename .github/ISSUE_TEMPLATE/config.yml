@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Read Contribution Guidelines
+    url: https://github.com/p10node/awesome-gguf/blob/main/CONTRIBUTING.md
+    about: Please review the criteria before submitting a resource.
