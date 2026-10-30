@@ -217,7 +217,7 @@ Xem chi tiết hướng dẫn tại [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 📄 Bản quyền (License)
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-0.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Theo mức độ tối đa được luật pháp cho phép, các tác giả từ bỏ mọi quyền tác giả và quyền liên quan đối với công trình này.
 
